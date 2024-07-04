@@ -67,7 +67,7 @@ $(BPFTOOL): | $(BPFTOOL_OUTPUT_DIR)
 
 libbpf: $(LIBBPF_OBJ)
 
-$(LIBBPF_OBJ): $(wildcard $(LIBBPF_SRC)/*.[ch] $(LIBBPF_SRC)/Makefile) | $(LIBBPF_OUTPUT) $(LIBBPF_OBJDIR)
+$(LIBBPF_OBJ): $(wildcard $(LIBBPF_SRC)/*.[ch] $(LIBBPF_SRC)/Makefile) | $(LIBBPF_OUTPUT_DIR) $(LIBBPF_OBJDIR)
 	@echo "Building $@"
 	@if [ ! -d $(LIBBPF_SRC) ]; then \
         echo "libbpf source directory does not exist"; \
@@ -81,7 +81,7 @@ $(LIBBPF_OBJ): $(wildcard $(LIBBPF_SRC)/*.[ch] $(LIBBPF_SRC)/Makefile) | $(LIBBP
 		INCLUDEDIR= LIBDIR= UAPIDIR= prefix= libdir= \
 		install install_uapi_headers
 
-$(LIBBPF_OUTPUT) $(LIBBPF_OBJDIR) $(BPFTOOL_OUTPUT_DIR): $(BUILDDEPS_DIR) $(LIBBPFTOOLS_SRC) $(LIBBPFTOOLS_OUTPUT)
+$(LIBBPF_OUTPUT_DIR) $(LIBBPF_OBJDIR) $(BPFTOOL_OUTPUT_DIR): $(BUILDDEPS_DIR) $(LIBBPFTOOLS_SRC) $(LIBBPFTOOLS_OUTPUT)
 	mkdir -p $@
 
 $(BUILDDEPS_DIR) $(OUTPUT):
