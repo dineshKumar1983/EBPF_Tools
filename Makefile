@@ -62,6 +62,9 @@ $(BPFTOOL): | $(BPFTOOL_OUTPUT_DIR)
 	@if [ ! -d $(BPFTOOL_SRC) ]; then \
 	echo "bpftool source directory does not exist"; \
 	git submodule update --init --recursive build_deps/src/bpftool; \
+	cd build_deps/src/bpftool; \
+	cd -; \
+	git checkout v6.7.0; \
 	fi
 	$(Q)$(MAKE) ARCH= CROSS_COMPILE=  OUTPUT=$(BPFTOOL_OUTPUT_DIR)/ -C $(BPFTOOL_SRC)
 
