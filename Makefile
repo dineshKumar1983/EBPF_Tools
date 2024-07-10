@@ -18,7 +18,7 @@ VMLINUX_DIR := $(abspath ./vmlinux)
 CFLAGS := -g -O2 -Wall -Wmissing-field-initializers -Werror
 BPFCFLAGS := -g -O2 -Wall
 
-INCLUDES := -I$(LIBBPF_OUTPUT_DIR) -I$(LIBBPFTOOLS_OUTPUT) -I$(LIBBPF_SRCDIR)/include/uapi
+INCLUDES := -I$(LIBBPF_OUTPUT_DIR) -I$(LIBBPFTOOLS_OUTPUT) -I$(LIBBPF_SRCDIR)/include/uapi -I$(LIBBPFTOOLS_SRC)
 
 ARCH := $(shell uname -m | sed -e 's/x86_64/x86/' -e 's/aarch64/arm64/')
 
@@ -27,6 +27,7 @@ CLANG := $(or $(CLANG),clang)
 
 APPS = \
 	hello \
+	connection_rate_counter \
 	#
 
 .PHONY: all

@@ -1,0 +1,21 @@
+/home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/output/bpf_tool/bootstrap/btf.o: \
+ btf.c \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/linux/err.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/linux/types.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/uapi/linux/btf.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/output/bpf_tool/bootstrap/libbpf/include/bpf/bpf.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/uapi/linux/bpf.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/uapi/linux/bpf_common.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/output/bpf_tool/bootstrap/libbpf/include/bpf/libbpf_common.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/output/bpf_tool/bootstrap/libbpf/include/bpf/libbpf_version.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/output/bpf_tool/bootstrap/libbpf/include/bpf/libbpf_legacy.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/output/bpf_tool/bootstrap/libbpf/include/bpf/btf.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/output/bpf_tool/bootstrap/libbpf/include/bpf/hashmap.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/output/bpf_tool/bootstrap/libbpf/include/bpf/libbpf.h \
+ json_writer.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/linux/compiler.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/linux/compiler_types.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/linux/compiler-gcc.h \
+ main.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/linux/kernel.h \
+ /home/dineshmurugiah/libbpf/study/EBPF_Tools/build_deps/src/bpftool/include/linux/build_bug.h
